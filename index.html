@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Recipe Search</title>
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="assets/css/materialize.css">
+  <!-- FONTS -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- ADDED STYLES -->
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+  <link href="https://fonts.googleapis.com/css?family=Courgette" rel="stylesheet">
+</head>
+<body id="index-body">
+  <nav class="grey lighten-4" role="navigation">
+    <div class="nav-wrapper container"><a href="index.html" class="brand-logo red-text text-lighten-1">Stir & Shake</a>
+    </div>
+  </nav>
+
+<div class="container">
+<header>
+  <h1>Hungry?</h1>
+</header>
+
+    <div class="row">
+      <form class="col s9 m9">
+      <!-- FORM TO SEARCH FOR A RECIPE -->
+        <div class="input-field">
+              <input placeholder="What do you want to cook?" id="user-search" type="text" class="validate">
+              <label for="user-search"></label>
+      </div>
+    </form>
+
+    <div class="col s3 m3">
+      <!-- SEARCH BUTTON -->
+      <button class="btn-large waves-effect waves-light red lighten-1" type="submit" name="action" alt="submit" id="search-button">
+        <i class="material-icons left">search</i>
+        SEARCH
+      </button>
+  </div>
+  </div>
+  <!-- USE FIREBASE TO DISPLAY RECENT SEARCHES -->
+  <section id="recent-searches">
+    <div class="row">
+      <div class="col m12 s12">
+        <h5>Recently searched:</h5>
+      </div>
+    </div>
+
+    <div class="row left-align">
+      <div class="col md12 s12" id="searchDisplay">
+
+      </div>
+    </div>
+</section>
+</div>
+  <!-- FIREBASE -->
+  <script src="https://www.gstatic.com/firebasejs/3.7.4/firebase.js"></script>
+   <!-- JQUERY -->
+   <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <!-- Compiled and minified JavaScript -->
+  <script src="assets/js/materialize.min.js"></script>
+  <!-- APPLICATION -->
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
